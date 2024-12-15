@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nesting Tables Example</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        .nested-table {
+            width: 80%;
+            margin: 10px auto;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Nested Table Example</h2>
+
+    <!-- Outer Table -->
+    <table>
+        <thead>
+            <tr>
+                <th>Department</th>
+                <th>Manager</th>
+                <th>Details</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Sales</td>
+                <td>John Doe</td>
+                <td>
+                    <!-- Nested Table inside the first table -->
+                    <table class="nested-table">
+                        <thead>
+                            <tr>
+                                <th>Employee</th>
+                                <th>Role</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Jane Smith</td>
+                                <td>Sales Representative</td>
+                                <td>Active</td>
+                            </tr>
+                            <tr>
+                                <td>Bob Brown</td>
+                                <td>Sales Representative</td>
+                                <td>Inactive</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>Marketing</td>
+                <td>Mary Ann</td>
+                <td>
+                    <!-- Another Nested Table inside the first table -->
+                    <table class="nested-table">
+                        <thead>
+                            <tr>
+                                <th>Employee</th>
+                                <th>Role</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Alice Johnson</td>
+                                <td>Marketing Specialist</td>
+                                <td>Active</td>
+                            </tr>
+                            <tr>
+                                <td>Charlie Davis</td>
+                                <td>Marketing Manager</td>
+                                <td>Active</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
